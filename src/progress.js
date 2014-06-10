@@ -123,7 +123,7 @@
     } else {
       //set progress bar container size and offset
       progressElementContainer.style.left  = targetElementOffset.left + 'px';
-      if (this._options.bottom) {
+      if (!this._options.bottom) {
         progressElementContainer.style.top = targetElementOffset.top + 'px';
       } else {
         progressElementContainer.style.bottom = targetElementOffset.bottom + 'px';
