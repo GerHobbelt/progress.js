@@ -126,7 +126,7 @@
       if (!this._options.bottom) {
         progressElementContainer.style.top = targetElementOffset.top + 'px';
       } else {
-        progressElementContainer.style.bottom = targetElementOffset.bottom + 'px';
+        progressElementContainer.style.top = targetElementOffset.top + targetElementOffset.height + 'px';
       }
       progressElementContainer.style.width = targetElementOffset.width + 'px';
 
