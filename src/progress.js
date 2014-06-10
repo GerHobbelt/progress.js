@@ -46,7 +46,9 @@
       //overlay mode makes an overlay layer in the target element
       overlayMode: false,
       //to consider CSS3 transitions in events
-      considerTransition: true
+      considerTransition: true,
+      //stick to top by default
+      bottom: false
     };
   }
 
