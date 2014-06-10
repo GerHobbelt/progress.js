@@ -121,7 +121,11 @@
     } else {
       //set progress bar container size and offset
       progressElementContainer.style.left  = targetElementOffset.left + 'px';
-      progressElementContainer.style.top   = targetElementOffset.top + 'px';
+      if (this._options.bottom) {
+        progressElementContainer.style.top = targetElementOffset.top + 'px';
+      } else {
+        progressElementContainer.style.bottom = targetElementOffset.bottom + 'px';
+      }
       progressElementContainer.style.width = targetElementOffset.width + 'px';
 
       if (this._options.overlayMode) {
